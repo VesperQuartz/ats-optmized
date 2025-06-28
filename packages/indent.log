@@ -1,0 +1,22 @@
+INFO:  latexindent version 3.24.4, 2024-07-18, a script to indent .tex files
+       latexindent lives here: /usr/share/texmf-dist/scripts/latexindent/
+       Fri Jun 27 22:10:30 2025
+       Reading input from STDIN
+INFO:  Processing switches:
+INFO:  Directory for backup files and log file indent.log:
+       .
+INFO:  YAML settings read: defaultSettings.yaml
+       Reading defaultSettings.yaml from /usr/share/texmf-dist/scripts/latexindent/defaultSettings.yaml
+INFO:  YAML reading settings
+       The config file in "/home/brown/indentconfig.yaml" will be read
+WARN:  The paths field cannot be read from /home/brown/indentconfig.yaml; this means it is either empty or contains invalid YAML
+       See https://latexindentpl.readthedocs.io/en/latest/sec-indent-config-and-settings.html for an example
+INFO:  Phase 1: searching for objects
+INFO:  Phase 2: finding surrounding indentation
+INFO:  Phase 3: indenting objects
+INFO:  Phase 4: final indentation check
+INFO:  Output routine:
+       Not outputting to file; see -w and -o switches for more options.
+       --------------
+INFO:  Please direct all communication/issues to:
+        https://github.com/cmhughes/latexindent.pl

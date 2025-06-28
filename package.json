@@ -1,0 +1,23 @@
+{
+  "name": "ast-optmized",
+  "module": "index.ts",
+  "type": "module",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "next:dev": "bun run --filter ast-frontend dev"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^24.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "await-to-ts": "^1.0.6",
+    "date-fns": "^4.1.0",
+    "ky": "^1.8.1",
+    "ts-pattern": "^5.7.1",
+    "zod": "^3.25.67"
+  }
+}
