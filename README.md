@@ -1,4 +1,4 @@
-# ast-optmized
+# ats-optmized
 
 To install dependencies:
 
