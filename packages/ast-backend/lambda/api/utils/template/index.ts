@@ -12,7 +12,7 @@ export const template = async (id: number) => {
       s3Client,
       new GetObjectCommand({
         Bucket: process.env.BUCKET_NAME!,
-        Key: `template${id}.tex`,
+        Key: "template.tex",
       }),
       {
         expiresIn: 240,
