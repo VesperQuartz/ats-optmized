@@ -8,7 +8,6 @@ import { JobDetailsStep } from "@/components/job-details";
 import { CompleteStep } from "@/components/complete-step";
 import { ErrorDisplay } from "@/components/error-display";
 import { match } from "ts-pattern";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const ResumeOptimizer = () => {
@@ -25,16 +24,13 @@ const ResumeOptimizer = () => {
   return (
     <div className="min-h-screen flex flex-col overflow-hidden bg-arcade-dark">
       <div className="flex-1 container mx-auto px-4 py-8 max-w-4xl">
-        <Button
-          asChild
+        <Link
+          href={"/"}
           className="flex items-center text-gray-400 hover:text-white mb-6 transition-colors"
         >
-          <Link href={"/"}>
-            <ArrowLeft size={20} className="mr-2" />
-            <span>Back to home</span>
-          </Link>
-        </Button>
-
+          <ArrowLeft size={20} className="mr-2" />
+          <span>Back to home</span>
+        </Link>
         <div className="text-center mb-8">
           <div className="w-16 h-16 rounded-full bg-arcade-terminal flex items-center justify-center mx-auto mb-4 relative">
             <div className="absolute inset-0 rounded-full bg-arcade-purple opacity-20 blur-xl"></div>
