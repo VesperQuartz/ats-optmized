@@ -27,7 +27,7 @@ export const CompleteStep = () => {
         <Button
           onClick={resetProcess}
           variant="outline"
-          className="w-full border-gray-600 text-gray-300 hover:bg-gray-800"
+          className="w-full border-gray-600 hover:bg-gray-800 hover:text-white bg-arcade-terminal"
         >
           Optimize Another Resume
         </Button>

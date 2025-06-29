@@ -71,6 +71,7 @@ export const useProcessText = () => {
 };
 
 export const useGenerateText = () => {
+  const key = useKeyStore();
   return useMutation({
     mutationKey: ["generate_text"],
     mutationFn: async (data: Generate) => {
@@ -88,6 +89,9 @@ export const useGenerateText = () => {
         text: string;
         url: string;
       }>();
+    },
+    onSuccess: () => {
+      key.deleteKey();
     },
   });
 };

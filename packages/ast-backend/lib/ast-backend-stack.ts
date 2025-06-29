@@ -71,7 +71,7 @@ export class AstBackendStack extends cdk.Stack {
         OPENAI_API_KEY: process.env.OPENAI_API_KEY!,
         LATEXT_COMPILE: process.env.LATEXT_COMPILE!,
       },
-      timeout: cdk.Duration.minutes(5),
+      timeout: cdk.Duration.minutes(10),
       memorySize: 3008,
     });
 

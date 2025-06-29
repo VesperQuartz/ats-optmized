@@ -104,8 +104,6 @@ export const generatePDF = async (text: string) => {
     `${compileUrl}?url=${encodeURIComponent(signedTexUrl)}&command=xelatex`,
   );
 
-  console.log("Try this", `${compileUrl}?url=${signedTexUrl}&command=xelatex`);
-
   const [error, data] = await to(
     ky(
       `${compileUrl}?url=${encodeURIComponent(signedTexUrl)}&command=xelatex`,

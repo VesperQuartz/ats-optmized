@@ -37,6 +37,7 @@
     "constructs": "^10.0.0",
     "dotenv": "^16.5.0",
     "hono": "^4.8.2",
+    "hono-rate-limiter": "^0.4.2",
     "open-next-cdk": "^0.0.10"
   }
 }
