@@ -7,13 +7,12 @@ import { UploadStep } from "@/components/upload";
 import { JobDetailsStep } from "@/components/job-details";
 import { CompleteStep } from "@/components/complete-step";
 import { ErrorDisplay } from "@/components/error-display";
-import { useRouter } from "next/navigation";
 import { match } from "ts-pattern";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const ResumeOptimizer = () => {
   const { currentStep, error, currentStepTitle } = useResumeStore();
-  console.log(currentStepTitle);
-  const navigate = useRouter();
 
   const renderStepContent = () => {
     return match(currentStep)
@@ -26,13 +25,15 @@ const ResumeOptimizer = () => {
   return (
     <div className="min-h-screen flex flex-col overflow-hidden bg-arcade-dark">
       <div className="flex-1 container mx-auto px-4 py-8 max-w-4xl">
-        <button
-          onClick={() => navigate.push("/")}
+        <Button
+          asChild
           className="flex items-center text-gray-400 hover:text-white mb-6 transition-colors"
         >
-          <ArrowLeft size={20} className="mr-2" />
-          <span>Back to home</span>
-        </button>
+          <Link href={"/"}>
+            <ArrowLeft size={20} className="mr-2" />
+            <span>Back to home</span>
+          </Link>
+        </Button>
 
         <div className="text-center mb-8">
           <div className="w-16 h-16 rounded-full bg-arcade-terminal flex items-center justify-center mx-auto mb-4 relative">
